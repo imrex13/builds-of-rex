@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    
+</head>
+<body>
+    <div>
+    <h1>Guess The Number Between 1 to 10</h1>
+    <input type="number" placeholder="Guess a Number" id="number">
+    <button onclick="check()">Check</button><br>
+    <p id="rw"></p>
+    <p id="sc">YourScore:10</p>
+    </div>
+
+<script >
+    //GUESS THE NUMBER PROJECT PRG:01 
+    var s = 10;
+function check(){
+    var a = Math.random();
+var a = Math.floor(a*10+1);
+console.log(a);
+var num = document.getElementById("number")
+var ans = document.getElementById("rw")
+var sco = document.getElementById("sc")
+    if(a == num.value)
+    {
+        ans.textContent = "You are Right !"
+        alert("Hurray!! You Won !!")
+    }
+    else
+    {
+        ans.textContent = "You are Wrong !"
+        sco.textContent = "YourScore:"+(s=s-1);
+        if(s==0)
+        {
+            alert("You loose press Refresh")
+
+        }
+    }
+}
+
+</script>
+</body>
+</html>

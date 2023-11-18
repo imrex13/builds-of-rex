@@ -1,0 +1,25 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" onkeyup="wriee()" id="qa">
+<p id="ans"></p>
+
+    <script>
+        //DISPLAYING A STRING WHEN TYPED... EX:01
+        var qa = document.getElementById("qa")
+        console.log(qa.textContent)
+        var ans = document.getElementById("ans")
+        function wriee(){
+            ans.textContent = qa.value;
+        }
+    </script>
+</body>
+</html>
